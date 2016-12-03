@@ -1,13 +1,13 @@
 <div ng-if='(repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest).length > 0'>
     <span>
         <h5 id='{{ repo.owner }}/{{ repo.name }}' class='repo-title'>
-            <span>
-                <span ng-if='repo.state' ng-click='repo.state = !repo.state' class='toggle-repo fa fa-caret-down' aria-hidden='true'></span>
-                <span ng-if='!repo.state' ng-click='repo.state = !repo.state' class='toggle-repo fa fa-caret-right' aria-hidden='true'></span>
-                &nbsp;{{ repo.owner }}/{{ repo.name }}
-            </span>
-            <span class='badge' title='issue count'>
-                {{ (repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest).length }}
+            <span class='repo-header' ng-click='repo.state = !repo.state'>
+                <span ng-if='repo.state' class='toggle-repo fa fa-caret-down' aria-hidden='true'></span>
+                <span ng-if='!repo.state' class='toggle-repo fa fa-caret-right' aria-hidden='true'></span>
+                <span>{{ repo.owner }}/{{ repo.name }}</span>
+                <span class='badge' title='issue count'>
+                    {{ (repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullRequest).length }}
+                </span>
             </span>
             <a ng-href='https://github.com/{{ repo.owner }}/{{ repo.name }}'><i class='fa fa-github-alt repo-link' aria-hidden='true'></i></a>
         </h5>

@@ -24,7 +24,10 @@
                         <span ng-if='issue.body.length > 150'> ...</span>
                     </p>
                     <div class='issue-labels' ng-if='issue.labels.length' class='btn-group'>
-                        <span ng-repeat='label in issue.labels' class='label issue-label' style='border-left-color:#{{label.color}};'>
+                        <span
+                        ng-repeat='label in issue.labels'
+                        class='label issue-label'
+                        ng-style='labelBackground(label.color)'>
                         {{ label.name }}
                         </span>
                     </div>
@@ -39,7 +42,10 @@
                 <span ng-if='issue.body.length > 150'> ...</span>
             </p>
             <div class='issue-labels' ng-if='issue.labels.length' class='btn-group'>
-                <span ng-repeat='label in issue.labels' class='label issue-label' style='border-left-color:#{{label.color}};'>
+                <span
+                ng-repeat='label in issue.labels'
+                class='label issue-label'
+                ng-style='labelBackground(label.color)'>
                 {{ label.name }}
                 </span>
             </div>

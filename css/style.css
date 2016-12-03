@@ -109,6 +109,13 @@ img.user-avatar {
 .github-repository {
   margin: 1rem auto; }
 
+.label {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+  margin-right: 2px; }
+
+.issues-list {
+  margin-top: 1rem; }
+
 .panel-footer {
   background-color: #ebf3f5; }
 

@@ -9,9 +9,6 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     var feed = this;
     // Time for 'Last Updated'.
     feed.time = new Date();
-    // Is this the pull requests page?
-    $scope.pullRequest = false;
-
 
     // Assigned filter
     $scope.assigned =  [
@@ -19,16 +16,20 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         { name: 'Unassigned', selected: false }
     ];
 
+    // Pull Requests / Issues Filter
+    $scope.pullrequests =  [
+        { name: 'All Issues', selected: true },
+        { name: 'Pull Requests', selected: false }
+    ];
+
+    $scope.toggleCheckbox = function(index) {
+        var otherCheckbox = Math.abs(index - 1);
+        $scope.pullrequests[otherCheckbox].selected = false;
+    };
+
     // Label filters
     $scope.labels = [];
     $scope.selectedLabels = [];
-
-    // Check all filters
-    $scope.checkAll = function(input) {
-        angular.forEach(input, function(value, key) {
-            value.selected = true;
-        });
-    };
 
     //Uncheck all filters
     $scope.uncheckAll = function(input) {
@@ -76,15 +77,6 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         console.log('An error has occurred while fetching list of repositories.');
     });
 
-    $scope.pullRequestFalse = function() {
-        $scope.pullRequest = false;
-        if ($scope.menu.state) $scope.menu.state = false;
-    }
-
-    $scope.pullRequestTrue = function() {
-        $scope.pullRequest = true;
-        if ($scope.menu.state) $scope.menu.state = false;
-    }
 }
 
 

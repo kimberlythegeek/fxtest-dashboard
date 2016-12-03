@@ -1,25 +1,28 @@
 <div id='filters' class='filters'>
     <ul class='list-unstyled filter-list'>
         <li class='list-title'>Filters:</li>
-        <li class='list-item col-xs-6' ng-repeat='item in assigned'>
-            <label>
-                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
-                {{ item.name }}
-            </label>
-        </li>
-        <li class='uncheck-filters text-right col-xs-12'>
-            <button class='btn btn-info btn-sm' ng-click='checkAll(assigned)'>Check All</button>
-            <button class='btn btn-info btn-sm' ng-click='uncheckAll(assigned)'>Uncheck All</button>
-        </li>
 
-        <li class='list-item col-xs-6' ng-repeat='item in selectedLabels'>
+        <li class='list-item col-xs-6 pull-requests' ng-repeat='item in pullrequests'>
             <label>
-                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' value='item.selected' />
+                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' ng-click='toggleCheckbox($index)' />
+                {{ item.name }}
+            </label>
+        </li>
+        <hr />
+        <li class='list-item col-xs-6 assignee' ng-repeat='item in assigned'>
+            <label>
+                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' />
+                {{ item.name }}
+            </label>
+        </li>
+        <hr />
+        <li class='list-item col-xs-6 labels' ng-repeat='item in selectedLabels'>
+            <label>
+                <input type='checkbox' name='{{ item.name }}' ng-model='item.selected' />
                 {{ item.name }}
             </label>
         </li>
         <li class='uncheck-filters text-right col-xs-12'>
-            <button class='btn btn-info btn-sm' ng-click='checkAll(selectedLabels)'>Check All</button>
             <button class='btn btn-info btn-sm' ng-click='uncheckAll(selectedLabels)'>Uncheck All</button>
         </li>
     </ul>

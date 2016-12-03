@@ -13,7 +13,7 @@
         </h5>
     </span>
 
-    <div ng-show='repo.state' class='repo-issues-container'>
+    <div class='issues-list' ng-show='repo.state' class='repo-issues-container'>
         <github-issue ng-repeat='issue in repo.issues | hasAssignee: assigned | labels: selectedLabels | pullRequests: pullrequests'>
             {{ issue }}
         </github-issue>

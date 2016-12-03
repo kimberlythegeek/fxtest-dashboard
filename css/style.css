@@ -1,0 +1,87 @@
+.btn-info {
+  background-color: #128bb6;
+  border-color: #0d6888; }
+
+label {
+  font-weight: normal; }
+
+/* Typography */
+body {
+  font-size: 0.75rem; }
+
+.page-title {
+  font-size: 0.9rem; }
+
+.uncheck-filters .btn-sm {
+  font-size: 0.8rem; }
+
+filter-list {
+  font-size: 0.8rem; }
+
+.repo-title {
+  font-size: 1rem; }
+
+.updated-time {
+  font-size: 0.8rem; }
+
+/* Header & Navigation */
+nav {
+  background-color: #ebf3f5; }
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+  width: 100%; }
+
+.navbar-toggle {
+  float: right;
+  margin: 2px 2px auto auto; }
+
+.navbar-header {
+  background: #0d6888;
+  height: 2.4rem;
+  text-align: left; }
+
+.page-title {
+  color: #fff;
+  float: left;
+  padding: 0.5rem 0 0 0.4rem; }
+
+.uncheck-filters .btn-sm {
+  padding: 0.25rem; }
+
+/* Sidebar */
+/* Body */
+a {
+  color: #128bb6; }
+
+.badge {
+  background-color: #0d6888; }
+
+img.user-avatar {
+  max-width: 100%; }
+
+.issue-description {
+  word-wrap: break-word; }
+
+.filter-list {
+  margin: 0; }
+
+.filter-list .list-item {
+  height: 1.2rem; }
+
+.filter-list .list-title {
+  display: none; }
+
+.panel-footer {
+  background-color: #ebf3f5; }
+
+.repo-link {
+  float: right; }
+
+.uncheck-filters {
+  display: none; }
+
+/* Media Queries */
+
+/*# sourceMappingURL=style.css.map */

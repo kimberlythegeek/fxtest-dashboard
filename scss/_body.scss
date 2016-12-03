@@ -34,6 +34,10 @@ img.user-avatar {
     background-color: lighten(desaturate($mobile-blue, 50%), 45%);
 }
 
+.repo-header:hover {
+    cursor: pointer;
+}
+
 .repo-link {
     float: right;
 }

@@ -6,6 +6,9 @@ label {
   font-weight: normal; }
 
 /* Typography */
+.badge {
+  font-size: 0.55rem; }
+
 body {
   font-size: 0.75rem; }
 
@@ -19,7 +22,7 @@ filter-list {
   font-size: 0.8rem; }
 
 .repo-title {
-  font-size: 1rem; }
+  font-size: 0.85rem; }
 
 .updated-time {
   font-size: 0.8rem; }
@@ -75,6 +78,9 @@ img.user-avatar {
 
 .panel-footer {
   background-color: #ebf3f5; }
+
+.repo-header:hover {
+  cursor: pointer; }
 
 .repo-link {
   float: right; }

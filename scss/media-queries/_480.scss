@@ -1,0 +1,28 @@
+// Screens > 480px
+
+@media (min-width: 480px){
+
+    .filter-list li.assignee,
+    .filter-list li.labels {
+        float: left;
+        margin-top: 0.2rem;
+        margin-bottom: 0.4rem;
+        width: 33%;
+    }
+    .filter-list .list-title {
+        display: none;
+    }
+
+    .page-title {
+        font-size: 1.1rem;
+    }
+
+    .uncheck-filters {
+        display: block;
+    }
+
+    .uncheck-filters.assignee {
+        padding: 0;
+    }
+
+}

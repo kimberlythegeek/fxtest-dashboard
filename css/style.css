@@ -2,30 +2,45 @@
   background-color: #128bb6;
   border-color: #0d6888; }
 
+h5 {
+  margin: auto; }
+
 label {
   font-weight: normal; }
 
+.navbar-nav {
+  margin: auto; }
+
+.navbar-nav > li > a {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+  padding-left: 3rem; }
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: transparent; }
+
 /* Typography */
 .badge {
-  font-size: 0.55rem; }
+  font-size: .55rem; }
 
 body {
-  font-size: 0.75rem; }
+  font-size: .75rem; }
 
 .page-title {
-  font-size: 0.9rem; }
+  font-size: .9rem; }
 
 .uncheck-filters .btn-sm {
-  font-size: 0.8rem; }
+  font-size: .8rem; }
 
 filter-list {
-  font-size: 0.8rem; }
+  font-size: .8rem; }
 
 .repo-title {
-  font-size: 0.85rem; }
+  font-size: .85rem; }
 
 .updated-time {
-  font-size: 0.8rem; }
+  font-size: .8rem; }
 
 /* Header & Navigation */
 nav {
@@ -36,27 +51,40 @@ nav {
   padding: 0;
   width: 100%; }
 
-.navbar-toggle {
-  float: right;
-  margin: 2px 2px auto auto; }
-
 .navbar-header {
   background: #0d6888;
   height: 2.4rem;
   text-align: left; }
 
+.navbar-nav li {
+  margin-bottom: 0;
+  padding-bottom: .25rem; }
+
+.navbar-nav li:hover {
+  background: #cadde4; }
+
+.navbar-toggle {
+  float: right;
+  margin: 2px 2px auto auto; }
+
 .page-title {
   color: #fff;
   float: left;
-  padding: 0.5rem 0 0 0.4rem; }
+  padding: .5rem 0 0 .4rem; }
 
 .uncheck-filters .btn-sm {
-  padding: 0.25rem; }
+  padding: .25rem; }
 
 /* Sidebar */
 /* Body */
 a {
   color: #128bb6; }
+
+hr {
+  border-top: 1px solid #cecfd1;
+  margin-top: 5px;
+  margin-bottom: 3px;
+  width: 90%; }
 
 .badge {
   background-color: #0d6888; }
@@ -64,17 +92,22 @@ a {
 img.user-avatar {
   max-width: 100%; }
 
-.issue-description {
+.panel {
   word-wrap: break-word; }
 
 .filter-list {
-  margin: 0; }
+  border-top: 1px solid #0d6888;
+  margin: 0;
+  padding-top: 5px; }
 
 .filter-list .list-item {
   height: 1.2rem; }
 
 .filter-list .list-title {
   display: none; }
+
+.github-repository {
+  margin: 1rem auto; }
 
 .panel-footer {
   background-color: #ebf3f5; }
@@ -89,5 +122,24 @@ img.user-avatar {
   display: none; }
 
 /* Media Queries */
+@media (min-width: 480px) {
+  .filter-list li.assignee,
+  .filter-list li.labels {
+    float: left;
+    margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
+    width: 33%; }
+
+  .filter-list .list-title {
+    display: none; }
+
+  .page-title {
+    font-size: 1.1rem; }
+
+  .uncheck-filters {
+    display: block; }
+
+  .uncheck-filters.assignee {
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

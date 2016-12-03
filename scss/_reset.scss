@@ -3,6 +3,21 @@
     background-color: darken($mobile-blue, 10%);
     border-color: darken($mobile-blue, 20%);
 }
+h5 {
+    margin: auto;
+}
 label {
     font-weight: normal;
+}
+.navbar-nav {
+    margin: auto;
+}
+.navbar-nav>li>a {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 3rem;
+}
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: rgba(0,0,0,0);
 }

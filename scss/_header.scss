@@ -12,23 +12,32 @@ nav {
     width: 100%;
 }
 
-.navbar-toggle {
-    float: right;
-    margin: 2px 2px auto auto;
-}
-
 .navbar-header {
     background: darken($mobile-blue, 20%);
     height: 2.4rem;
     text-align: left;
 }
 
+.navbar-nav li {
+    margin-bottom: 0;
+    padding-bottom: .25rem;
+}
+
+.navbar-nav li:hover {
+    background: lighten(desaturate($mobile-blue, 50%), 35%);
+}
+
+.navbar-toggle {
+    float: right;
+    margin: 2px 2px auto auto;
+}
+
 .page-title {
     color: $white;
     float: left;
-    padding: 0.5rem 0 0 0.4rem;
+    padding: .5rem 0 0 .4rem;
 }
 
 .uncheck-filters .btn-sm {
-    padding: 0.25rem;
+    padding: .25rem;
 }

@@ -10,6 +10,22 @@ function FeedController($scope, $http, $q, IssueFeedService) {
     // Time for 'Last Updated'.
     feed.time = new Date();
 
+    // Conver Hex colors to RGB
+    $scope.labelBackground = function(hex) {
+        if (hex == undefined) return null;
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        if (result == null) return null;
+        var rgb = {
+            'r': parseInt(result[1], 16),
+            'g': parseInt(result[2], 16),
+            'b': parseInt(result[3], 16)
+        };
+        return {
+            background: 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.5)'
+        }
+    }
+
+
     // Assigned filter
     $scope.assigned =  [
         { name: 'Assigned', selected: false },
@@ -22,6 +38,7 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         { name: 'Pull Requests', selected: false }
     ];
 
+    // Ensure only 'Issues' OR 'Pull Requests' is selectd, never both
     $scope.toggleCheckbox = function(index) {
         var otherCheckbox = Math.abs(index - 1);
         $scope.pullrequests[otherCheckbox].selected = false;

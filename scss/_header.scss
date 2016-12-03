@@ -1,0 +1,34 @@
+@import 'colors';
+
+/* Header & Navigation */
+
+nav {
+    background-color: lighten(desaturate($mobile-blue, 50%), 45%);
+}
+
+.navbar {
+    border-bottom: 1px solid #ddd;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar-toggle {
+    float: right;
+    margin: 2px 2px auto auto;
+}
+
+.navbar-header {
+    background: darken($mobile-blue, 20%);
+    height: 2.4rem;
+    text-align: left;
+}
+
+.page-title {
+    color: $white;
+    float: left;
+    padding: 0.5rem 0 0 0.4rem;
+}
+
+.uncheck-filters .btn-sm {
+    padding: 0.25rem;
+}

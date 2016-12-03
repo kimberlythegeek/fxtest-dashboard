@@ -1,0 +1,43 @@
+@import 'colors';
+
+/* Body */
+
+a {
+    color: darken($mobile-blue, 10%);
+}
+
+.badge {
+    background-color: darken($mobile-blue, 20%);
+}
+
+img.user-avatar {
+    max-width: 100%;
+}
+
+.issue-description {
+    word-wrap: break-word;
+}
+
+.filter-list {
+    margin: 0;
+}
+
+.filter-list .list-item {
+    height: 1.2rem;
+}
+
+.filter-list .list-title {
+    display: none;
+}
+
+.panel-footer {
+    background-color: lighten(desaturate($mobile-blue, 50%), 45%);
+}
+
+.repo-link {
+    float: right;
+}
+
+.uncheck-filters {
+    display: none;
+}

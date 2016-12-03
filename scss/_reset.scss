@@ -1,0 +1,8 @@
+@import 'colors';
+.btn-info {
+    background-color: darken($mobile-blue, 10%);
+    border-color: darken($mobile-blue, 20%);
+}
+label {
+    font-weight: normal;
+}

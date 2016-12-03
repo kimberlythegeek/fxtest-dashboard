@@ -4,10 +4,13 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
     <title>Firefox Test Engineering Dashboard</title>
     <meta name='description' content=''>
-    <meta name='viewport' content='width=device-width'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel='stylesheet' href='css/bootstrap.css'>
-    <link rel='stylesheet' href='css/dashboard.css'>
+    <link rel='stylesheet' href='css/mofo.css'>
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+    <!-- <link rel='stylesheet' href='css/dashboard.css'> -->
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:Light' />
 
 </head>
@@ -21,23 +24,21 @@
         <div class='row'>
             <nav class='navbar'>
                 <div class='navbar-header'>
-                  <button type='button' class='navbar-toggle' ng-click='menu.state = !menu.state' aria-hidden='true'>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
-                    <span class='icon-bar'></span>
+                  <button type='button' class='navbar-toggle btn btn-info' ng-click='menu.state = !menu.state' aria-hidden='true'>
+                    <span class='fa fa-bars'></span>
                   </button>
-                  <a class='navbar-brand' href='#'>Firefox Test Engineering Dashboard</a>
+                  <div class='page-title'>Firefox Test Engineering Dashboard</div>
                 </div>
                 <navigation-menu ng-if='menu.state'></navigation-menu>
                 <filter-list class='filters-mobile'></filter-list>
             </nav>
 
-            <div class='col-sm-3 col-md-2 sidebar'>
+            <!-- <div class='col-sm-3 col-md-2 sidebar'>
                 <div class='nav-sidebar'>
                     <navigation-menu></navigation-menu>
                 </div><!-- .sidebar-nav -->
 
-                <filter-list></filter-list>
+                <!-- <filter-list></filter-list> -->
 
             </div><!-- .sidebar -->
         </div><!-- .row -->
@@ -45,7 +46,7 @@
 
     <div class='container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main'>
 
-        <div>
+        <div class='updated-time'>
             <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>
         </div>
 

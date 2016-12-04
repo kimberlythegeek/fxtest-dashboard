@@ -26,7 +26,6 @@ img.user-avatar {
 }
 
 .filter-list {
-    border-top: 1px solid darken($mobile-blue, 20%);
     margin: 0;
     padding-top: 5px;
 }
@@ -37,6 +36,10 @@ img.user-avatar {
 
 .filter-list .list-title {
     display: none;
+}
+
+.filters {
+    border-top: 1px solid darken($mobile-blue, 20%);
 }
 
 .github-repository {

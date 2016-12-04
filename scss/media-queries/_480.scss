@@ -2,18 +2,40 @@
 
 @media (min-width: 480px){
 
+    body {
+        font-size: .85rem;
+    }
+
     .filter-list li.assignee,
+    .filter-list li.pull-requests {
+        margin-left: 8.33333%;
+        width: 41.66667%;
+    }
+
     .filter-list li.labels {
         float: left;
-        margin-top: 0.2rem;
-        margin-bottom: 0.4rem;
-        width: 33%;
+        margin-left: 4.1666665%;
+        margin-top: .2rem;
+        margin-bottom: .4rem;
+        width: 29.166667%;
     }
+
     .filter-list .list-title {
-        display: none;
+        display: block;
+        font-size: 1rem;
+        margin: .6rem auto .2rem 2rem;
+    }
+
+    .navbar-nav {
+        font-size: .9rem;
+        max-width: 400px;
     }
 
     .page-title {
+        font-size: 1.2rem;
+    }
+
+    .repo-title {
         font-size: 1.1rem;
     }
 
@@ -23,6 +45,10 @@
 
     .uncheck-filters.assignee {
         padding: 0;
+    }
+
+    .updated-time {
+        font-size: .85rem;
     }
 
 }

@@ -7,12 +7,15 @@ nav {
 }
 
 .navbar {
+    border: none;
     border-bottom: 1px solid #ddd;
+    margin-top: 0;
     padding: 0;
     width: 100%;
 }
 
 .navbar-header {
+    width: 100%;
     background: darken($mobile-blue, 20%);
     height: 2.4rem;
     text-align: left;

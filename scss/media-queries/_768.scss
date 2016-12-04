@@ -1,0 +1,73 @@
+// Screens > 768px
+@media (min-width:768px) {
+
+    .container {
+        margin-left: 25%;
+        margin-top: 3rem;
+    }
+
+    .filter-list li.assignee,
+    .filter-list li.labels,
+    .filter-list li.pull-requests {
+        margin: .2rem;
+        max-width: 100%;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .filter-list li.list-title {
+        padding-left: 1rem;
+        margin: auto;
+    }
+
+    .filter-list li:nth-child(3),
+    .filter-list li:nth-child(6) {
+        margin-bottom: 1rem;
+    }
+
+    .filters {
+        border: none;
+    }
+
+    .navbar {
+        width: 25%;
+        float: left;
+        position: fixed;
+        z-index: 200;
+        margin-top: 2.4rem;
+        height: 1000;
+    }
+
+    .navbar-header {
+        position: fixed;
+        z-index: 1000;
+    }
+
+    .navbar-nav {
+        padding-bottom: 1rem;
+        border-bottom: 1px solid  darken($mobile-blue, 20%);
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+
+    .navbar-nav li {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .navbar-nav > li > a {
+        padding-left: 1rem;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    navigation-menu {
+        display: block!important; // override for Angular ng-show directive
+    }
+
+    .uncheck-filters {
+        margin-top : 1rem;
+    }
+}

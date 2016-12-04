@@ -6,6 +6,11 @@
         font-size: .85rem;
     }
 
+    .filter-list {
+        max-width: 500px;
+        margin: auto;
+    }
+
     .filter-list li.assignee,
     .filter-list li.pull-requests {
         margin-left: 8.33333%;

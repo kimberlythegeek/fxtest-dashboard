@@ -22,13 +22,15 @@
 
     <div class='container-fluid'>
         <div class='row'>
+
+            <div class='navbar-header'>
+              <button type='button' class='navbar-toggle btn btn-info' ng-click='menu.state = !menu.state' aria-hidden='true'>
+                <span class='fa fa-bars'></span>
+              </button>
+              <div class='page-title'>Firefox Test Engineering Dashboard</div>
+            </div>
+
             <nav class='navbar'>
-                <div class='navbar-header'>
-                  <button type='button' class='navbar-toggle btn btn-info' ng-click='menu.state = !menu.state' aria-hidden='true'>
-                    <span class='fa fa-bars'></span>
-                  </button>
-                  <div class='page-title'>Firefox Test Engineering Dashboard</div>
-                </div>
                 <navigation-menu ng-show='menu.state'></navigation-menu>
                 <filter-list class='filters-mobile'></filter-list>
             </nav>
@@ -44,7 +46,7 @@
         </div><!-- .row -->
     </div><!-- .container-fluid -->
 
-    <div class='container col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main'>
+    <div class='container col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main'>
 
         <div class='updated-time'>
             <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>

@@ -6,17 +6,17 @@ angular.module('dashboardApp')
 
 IssueFeedService.$inject = ['$http', '$q', 'REPO_CONFIG_URL', 'GITHUB_API_PATH'];
 function IssueFeedService($http, $q, REPO_CONFIG_URL, GITHUB_API_PATH) {
-    var service = this;
+  var _this = this;
 
-    service.getRepoList = function() {
-        var response = $http({
+  _this.getRepoList = function () {
+      var response = $http({
             method: 'GET',
-            url: (REPO_CONFIG_URL)
-        });
-        return response;
+            url: (REPO_CONFIG_URL),
+          });
+      return response;
     };
 
-    service.getIssues = function(repoOwner, repoName, apiToken) {
+  _this.getIssues = function (repoOwner, repoName, apiToken) {
         var response = $http({
             method: 'GET',
             url: (GITHUB_API_PATH + repoOwner + '/' + repoName + '/issues'),
@@ -24,11 +24,11 @@ function IssueFeedService($http, $q, REPO_CONFIG_URL, GITHUB_API_PATH) {
                 per_page: 100,
                 state: 'open',
                 sort: 'created',
-                access_token: apiToken
-            }
-        });
+                access_token: apiToken,
+              },
+          });
         return response;
-    }
+      };
 }
 
 })();

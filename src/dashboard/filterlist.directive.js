@@ -1,14 +1,14 @@
-(function() {
+(function () {
 'use strict';
 
 angular.module('dashboardApp')
 .directive('filterList', filterList);
 
-function filterList(){
-    return {
+function filterList() {
+  return {
         restrict: 'E',
-        templateUrl: 'src/dashboard/filterlist.template.html'
-    };
+        templateUrl: 'src/dashboard/filterlist.template.html',
+      };
 }
 
 })();

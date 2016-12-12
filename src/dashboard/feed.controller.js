@@ -25,6 +25,16 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         background: 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.5)',
       };
     };
+    
+  // Toggle Repos
+  $scope.toggleRepos = function (repos) {
+    var toggle;
+    if(repos[0].state) toggle = false;
+    else toggle = true;
+    angular.forEach(repos, function (repo) {
+      repo.state = toggle;
+    });
+  };
 
   // Assigned filter
   $scope.assigned =  [

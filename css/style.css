@@ -60,8 +60,8 @@
 }
 @font-face {
   font-family 'FontAwesome' {
-    src: url("fontawesome-webfont.eot");
-    src: url("fontawesome-webfont.eot?#iefix") format('embedded-opentype'), src url("fontawesome-webfont.woff2") format('woff2'), src url("fontawesome-webfont.woff") format('woff'), src url("fontawesome-webfont.ttf") format('truetype'), src url("fontawesome-webfont.svg#ambleregular") format('svg');
+    src: url("/fonts/fontawesome-webfont.eot");
+    src: url("/fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), src url("/fonts/fontawesome-webfont.woff2") format('woff2'), src url("/fonts/fontawesome-webfont.woff") format('woff'), src url("/fonts/fontawesome-webfont.ttf") format('truetype'), src url("/fonts/fontawesome-webfont.svg#ambleregular") format('svg');
     font-weight: normal;
     font-style: normal;
   }
@@ -306,8 +306,8 @@ a:hover {
 }
 @font-face {
   font-family 'FontAwesome' {
-    src: url("fontawesome-webfont.eot");
-    src: url("fontawesome-webfont.eot?#iefix") format('embedded-opentype'), src url("fontawesome-webfont.woff2") format('woff2'), src url("fontawesome-webfont.woff") format('woff'), src url("fontawesome-webfont.ttf") format('truetype'), src url("fontawesome-webfont.svg#ambleregular") format('svg');
+    src: url("/fonts/fontawesome-webfont.eot");
+    src: url("/fonts/fontawesome-webfont.eot?#iefix") format('embedded-opentype'), src url("/fonts/fontawesome-webfont.woff2") format('woff2'), src url("/fonts/fontawesome-webfont.woff") format('woff'), src url("/fonts/fontawesome-webfont.ttf") format('truetype'), src url("/fonts/fontawesome-webfont.svg#ambleregular") format('svg');
     font-weight: normal;
     font-style: normal;
   }

@@ -30,7 +30,7 @@
           <div id="tabzilla">
             <a href="https://mozilla.org">Mozilla</a>
           </div>
-          <navigation-menu ng-show='menu.state'></navigation-menu>
+          <navigation-menu class='header-nav' ng-show='menu.state'></navigation-menu>
         <!-- </nav> -->
       </div><!-- .row -->
 
@@ -40,7 +40,11 @@
       
       <div class='row'>
         <div class='page-title-sm'><h4>fx-test dashboard</h4></div>
-          <div><filter-list class='col-md-3 filters-sidebar'></filter-list></div>
+          <div class='sidebar'>
+            <navigation-menu class='sidebar-nav'></navigation-menu>
+            <img src='/img/sandstone-hr-sm.png' />
+            <filter-list class='col-md-3'></filter-list>
+          </div>
           <div class='container col-sm-12 col-md-9 col-md-offset-3 main'>
             <div class='page-title'><h1>Firefox Test Engineering Dashboard</h1></div>
             <div class='updated-time'>

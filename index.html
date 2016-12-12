@@ -5,59 +5,58 @@
     <title>Firefox Test Engineering Dashboard</title>
     <meta name='description' content=''>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/png" href="/img/moz-favicon-32x32.png" />
     <!-- Fonts  -->
-    <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
-    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:Light' />
+    <!-- <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans' /> -->
     <!-- Stylesheets -->
-    <link rel='stylesheet' href='lib/bootstrap.min.css'>
-    <link rel='stylesheet' href='lib/mofo.min.css'>
+    <!-- <link rel='stylesheet' href='css/styleguide.css'> -->
+    <!-- <link rel='stylesheet' href='css/common.css'> -->
+    <link rel='stylesheet' href='css/bootstrap.css'>
+    <link rel='stylesheet' href='css/tabzilla.css'>
     <link rel='stylesheet' href='css/style.css'>
 </head>
 <body ng-controller='FeedController as feed'>
+  <div class='container-fluid'>
+    
 
+  
     <!--[if lt IE 7]>
     <p class='chromeframe'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> or <a href='http://www.google.com/chromeframe/?redirect=true'>activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <div class='container-fluid'>
-        <div class='row'>
+    <div class=''>
+      
+      <div class='row'>
+        <!-- <nav class='navbar'> -->
+          <button type='button' class='navbar-toggle button button-nav' ng-click='menu.state = !menu.state' aria-hidden='true'>
+            <span class='fa fa-bars'></span>
+          </button>
+          <div id="tabzilla">
+            <a href="https://mozilla.org">Mozilla</a>
+          </div>
+          <navigation-menu ng-show='menu.state'></navigation-menu>
+        <!-- </nav> -->
+      </div><!-- .row -->
 
-            <div class='navbar-header'>
-              <button type='button' class='navbar-toggle btn btn-info' ng-click='menu.state = !menu.state' aria-hidden='true'>
-                <span class='fa fa-bars'></span>
-              </button>
-              <div class='page-title'>Firefox Test Engineering Dashboard</div>
+      <div class='row filters-mobile'>
+        <filter-list></filter-list>
+      </div><!-- .row -->
+      
+      <div class='row'>
+        <div class='page-title-sm'><h4>fx-test dashboard</h4></div>
+          <div><filter-list class='col-md-3 filters-sidebar'></filter-list></div>
+          <div class='container col-sm-12 col-md-9 col-md-offset-3 main'>
+            <div class='page-title'><h1>Firefox Test Engineering Dashboard</h1></div>
+            <div class='updated-time'>
+                <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>
             </div>
-
-            <nav class='navbar'>
-                <navigation-menu ng-show='menu.state'></navigation-menu>
-                <filter-list class='filters-mobile'></filter-list>
-            </nav>
-
-            <!-- <div class='col-sm-3 col-md-2 sidebar'>
-                <div class='nav-sidebar'>
-                    <navigation-menu></navigation-menu>
-                </div><!-- .sidebar-nav -->
-
-                <!-- <filter-list></filter-list> -->
-
-            </div><!-- .sidebar -->
+            <button class='toggle-repos button' ng-click='toggleRepos(feed.repos)'>Toggle All</button>
+            <github-repository ng-repeat='repo in feed.repos'>
+            </github-repository>
+          </div> <!-- .container --> 
         </div><!-- .row -->
+      </div><!-- .main -->
     </div><!-- .container-fluid -->
-
-    <div class='container col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 main'>
-
-        <div class='updated-time'>
-            <i class='fa fa-clock-o'></i>&nbsp;Updated <span am-time-ago='feed.time'></span>
-        </div>
-
-        <github-repository ng-repeat='repo in feed.repos'>
-        </github-repository>
-
-
-    </div> <!-- .container -->
-
 
     <!-- Libraries -->
     <script src='//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>

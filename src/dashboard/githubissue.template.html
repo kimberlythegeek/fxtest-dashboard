@@ -16,7 +16,7 @@
                         </a>
                     </span>
                 </div><!-- .col-md-1 -->
-                <div class='col-md-11 col-sm-10 col-xs-9'>
+                <div class='issue-body col-md-11 col-sm-10 col-xs-9'>
                     <p class='assigned-user'>Assigned to <a ng-href='{{ issue.assignee.url }}'>{{ issue.assignee.login }}</a></p>
                     <p class='issue-updated-at'>Last updated <span am-time-ago='issue.updated_at'></span></p>
                     <p class='issue-description' ng-if='issue.body.length'>
@@ -24,12 +24,12 @@
                         <span ng-if='issue.body.length > 150'> ...</span>
                     </p>
                     <div class='issue-labels' ng-if='issue.labels.length' class='btn-group'>
-                        <span
+                        <div
                         ng-repeat='label in issue.labels'
                         class='label issue-label'
                         ng-style='labelBackground(label.color)'>
                         {{ label.name }}
-                        </span>
+                      </div>
                     </div>
                 </div><!-- .col-md-11 -->
             </div><!-- .row -->
@@ -42,12 +42,12 @@
                 <span ng-if='issue.body.length > 150'> ...</span>
             </p>
             <div class='issue-labels' ng-if='issue.labels.length' class='btn-group'>
-                <span
+                <div
                 ng-repeat='label in issue.labels'
                 class='label issue-label'
                 ng-style='labelBackground(label.color)'>
                 {{ label.name }}
-                </span>
+              </div>
             </div>
         </span>
     </div><!-- .panel-footer -->

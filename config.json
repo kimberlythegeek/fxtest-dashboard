@@ -2,14 +2,6 @@
   "repos": [
       {
           "owner": "mozilla",
-          "name": "Addon-Tests"
-      },
-      {
-          "owner": "mozilla",
-          "name": "bidpom"
-      },
-      {
-          "owner": "mozilla",
           "name": "fxapom"
       },
       {
@@ -22,48 +14,35 @@
       },
       {
           "owner": "mozilla",
-          "name": "hello-tests"
+          "name": "fxtest-jenkins-pipeline"
       },
       {
-          "owner": "mozilla",
-          "name": "moz-grid-config"
+          "owner": "mozilla-services",
+          "name": "go-bouncer"
+      },
+      {
+          "owner": "Kinto",
+          "name": "kinto-integration-tests"
       },
       {
           "owner": "mozilla",
           "name": "mozillians-tests"
       },
       {
-          "owner": "mozilla",
-          "name": "moztrap-tests"
+          "owner": "mozilla-services",
+          "name": "services-test"
       },
       {
           "owner": "mozilla",
-          "name": "mozwebqa-dashboard"
-      },
-      {
-          "owner": "mozilla",
-          "name": "mozwebqa-examples"
-      },
-      {
-          "owner": "mozilla",
-          "name": "snippets-tests"
-      },
-      {
-          "owner": "mozilla",
-          "name": "Socorro-Tests"
-      },
-      {
-          "owner": "mozilla",
-          "name": "treeherder-tests"
-      },
-      {
-          "owner": "mozilla",
-          "name": "webqabot"
+          "name": "stubattribution-tests"
       },
       {
           "owner": "mozilla-services",
-          "name": "services-test"
+          "name": "axe-selenium-python"
+      },
+      {
+          "owner": "mozilla-services",
+          "name": "pytest-axe"
       }
-  ],
-  "apiToken": "692aadd2c9789a337c4d3544787f101ad8c35bc7"
+  ]
 }

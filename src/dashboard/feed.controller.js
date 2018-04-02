@@ -25,7 +25,7 @@ function FeedController($scope, $http, $q, IssueFeedService) {
         background: 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',0.5)',
       };
     };
-    
+
   // Toggle Repos
   $scope.toggleRepos = function (repos) {
     var toggle;
@@ -107,7 +107,6 @@ function FeedController($scope, $http, $q, IssueFeedService) {
 
         });
 
-      console.log(_this.repos);
     },
 
     function error(response) {

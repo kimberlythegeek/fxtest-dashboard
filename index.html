@@ -10,18 +10,19 @@
     <link rel='stylesheet' href='/lib/bootstrap.min.css'>
     <link rel='stylesheet' href='/css/tabzilla.css'>
     <link rel='stylesheet' href='/css/style.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans'>
 </head>
 <body ng-controller='FeedController as feed'>
   <div class='container-fluid'>
-    
 
-  
+
+
     <!--[if lt IE 7]>
     <p class='chromeframe'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> or <a href='http://www.google.com/chromeframe/?redirect=true'>activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
     <div class=''>
-      
+
       <div class='row'>
         <!-- <nav class='navbar'> -->
           <button type='button' class='navbar-toggle button button-nav' ng-click='menu.state = !menu.state' aria-hidden='true'>
@@ -37,7 +38,7 @@
       <div class='row filters-mobile'>
         <filter-list></filter-list>
       </div><!-- .row -->
-      
+
       <div class='row'>
         <div class='page-title-sm'><h4>fx-test dashboard</h4></div>
           <div class='sidebar'>
@@ -52,7 +53,7 @@
             <button class='toggle-repos button' ng-click='toggleRepos(feed.repos)'>Toggle All</button>
             <github-repository ng-repeat='repo in feed.repos'>
             </github-repository>
-          </div> <!-- .container --> 
+          </div> <!-- .container -->
         </div><!-- .row -->
       </div><!-- .main -->
     </div><!-- .container-fluid -->
